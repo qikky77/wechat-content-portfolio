@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="政企品牌微信公众号内容作品集，展示品牌文章撰写、视频脚本创作、海报构思与绘制及图文排版。">
+  <title>品牌内容创作作品集｜文章·视频脚本·视觉设计</title>
+  <style>
+:root {
+  --site-primary: #35483D;
+  --site-secondary: #E8E7DF;
+  --site-background: #F8F7F3;
+  --site-on-primary: #FFFFFF;
+  --site-on-secondary: #242722;
+  --site-on-background: #242722;
+  --site-font-body: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --site-font-heading: Georgia, "Songti SC", serif;
+  --site-heading-scale: 1;
+  --site-spacing-scale: 1;
+  --site-radius-scale: 1;
+  --site-decoration-opacity: 1;
+  --paper: light-dark(var(--site-background), #171916);
+  --surface: light-dark(#ffffff, #242722);
+  --ink: light-dark(var(--site-on-background), #f3f2ec);
+  --muted: light-dark(#73766e, #b4b8af);
+  --line: light-dark(#e3e2db, #3a3e38);
+  --green: #526b5d;
+  --green-dark: light-dark(var(--site-primary), #35483d);
+  --cream: #e9dfcd;
+  --sage: #dce4da;
+  --lilac: #e4dfeb;
+  --max-width: 1160px;
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 90px; }
+body { margin: 0; background: light-dark(var(--site-background), #171916); color: var(--ink); font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; line-height: 1.7; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; }
+.site-header { background-color: light-dark(var(--site-background), #171916); height: 76px; display: flex; align-items: center; justify-content: space-between; padding: 0 max(5.5vw, calc((100vw - var(--max-width)) / 2)); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 20; }
+.brand { display: inline-flex; align-items: center; gap: 10px; font-size: 11px; font-weight: 750; letter-spacing: .14em; }
+.brand-mark { width: 30px; height: 30px; display: grid; place-items: center; background: var(--green-dark); color: white; border-radius: 50%; font-size: 13px; letter-spacing: -.06em; }
+.nav { display: flex; gap: 30px; align-items: center; font-size: 13px; color: #50544d; }
+.nav a:hover, .text-link:hover, .card-links a:hover { color: var(--green); }
+.menu-toggle { display: none; border: 1px solid var(--line); background: transparent; border-radius: 8px; padding: 5px 10px; }
+.section-wrap { width: min(var(--max-width), calc(100% - 48px)); margin-inline: auto; }
+.hero { min-height: 530px; display: grid; grid-template-columns: 1.5fr .7fr; align-items: center; gap: 70px; padding-block: 85px 92px; }
+.eyebrow { color: var(--green); font-size: 10px; font-weight: 750; letter-spacing: .17em; margin: 0 0 19px; }
+h1, h2, h3, p { margin-top: 0; }
+h1 { font-size: clamp(38px, 5.1vw, 66px); letter-spacing: -.055em; line-height: 1.2; font-weight: 650; margin-bottom: 25px; }
+h1 em, h2 em { color: var(--green); font-style: normal; }
+.hero-intro { color: var(--muted); max-width: 570px; font-size: 15px; line-height: 1.95; }
+.hero-actions { display: flex; align-items: center; gap: 26px; margin-top: 30px; }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 18px; padding: 12px 18px; border-radius: 3px; font-size: 13px; transition: transform .2s, background .2s; }
+.button:hover { transform: translateY(-2px); }
+.button-dark { background: var(--green-dark); color: #fff; }
+.button-dark:hover { background: var(--green); }
+.text-link { font-size: 13px; }
+.hero-note { background: #e8e7df; padding: 34px 30px; min-height: 220px; display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow: hidden; }
+.hero-note::after { content: "“"; position: absolute; right: 8px; bottom: -76px; color: rgba(82,107,93,.12); font: 220px Georgia, serif; }
+.note-index, .note-small { font-size: 9px; letter-spacing: .15em; color: #6d756c; }
+.note-rule { width: 36px; height: 2px; background: var(--green); margin: 25px 0 12px; }
+.hero-note p { font-family: Georgia, "Songti SC", serif; font-size: 23px; line-height: 1.55; max-width: 230px; margin-bottom: 24px; position: relative; z-index: 1; }
+.works { padding-block: 36px 100px; }
+.section-heading { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin-bottom: 30px; }
+.section-heading .eyebrow { margin-bottom: 8px; }
+h2 { font-size: clamp(29px, 3.4vw, 42px); letter-spacing: -.045em; line-height: 1.3; font-weight: 620; margin-bottom: 0; }
+.section-aside { font-size: 12px; color: var(--muted); margin-bottom: 5px; }
+.filter-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 28px; }
+.filter-button { cursor: pointer; border: 1px solid #dcdcd4; color: #666a62; background: transparent; padding: 7px 13px; border-radius: 30px; font-size: 12px; }
+.filter-button:hover, .filter-button.active { background: var(--green-dark); border-color: var(--green-dark); color: white; }
+.work-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; }
+.work-card { min-width: 0; }
+.work-card[hidden] { display: none; }
+.work-image { height: 250px; display: block; padding: 20px; position: relative; overflow: hidden; transition: filter .2s; }
+.work-image:hover { filter: saturate(1.1); }
+.image-cream { background: var(--cream); color: #3d443b; }
+.image-sage { background: var(--sage); color: #34483c; }
+.image-lilac { background: var(--lilac); color: #494355; }
+.image-label { display: block; font-size: 9px; letter-spacing: .15em; opacity: .72; }
+.image-title { display: block; position: absolute; left: 24px; bottom: 29px; font-family: Georgia, "Songti SC", serif; font-size: clamp(24px, 2.5vw, 34px); line-height: 1.35; letter-spacing: -.03em; }
+.image-decoration { position: absolute; right: 14px; top: 34px; font: italic 96px Georgia, serif; opacity: .12; }
+.work-meta { display: flex; justify-content: space-between; gap: 12px; color: var(--muted); font-size: 10px; margin-top: 18px; }
+.work-card h3 { font-size: 17px; font-weight: 620; line-height: 1.5; margin: 8px 0; }
+.work-card h3 a:hover { color: var(--green); }
+.work-card > p { font-size: 12px; color: var(--muted); line-height: 1.8; min-height: 44px; margin-bottom: 15px; }
+.card-links { border-top: 1px solid var(--line); padding-top: 12px; display: flex; justify-content: space-between; gap: 12px; font-size: 11px; }
+.card-links span { margin-left: 4px; }
+.edit-hint { margin-top: 28px; padding: 14px 16px; background: #efeee8; color: #666a62; font-size: 11px; line-height: 1.8; }
+.edit-hint strong { color: var(--ink); }
+.about-section { background: #eeeee7; padding-block: 80px; }
+.about-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 100px; align-items: start; }
+.about-grid h2 { font-size: clamp(29px, 3.5vw, 43px); }
+.about-copy { padding-top: 6px; }
+.about-copy p { color: #62665f; font-size: 14px; line-height: 2; margin-bottom: 18px; }
+.about-copy .small-note { border-left: 2px solid #b5c1b4; padding-left: 13px; font-size: 11px; }
+.skills { padding-block: 90px 100px; }
+.skill-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); border-top: 1px solid var(--line); margin-top: 32px; }
+.skill-item { padding: 24px 22px 0 0; margin-right: 22px; }
+.skill-item > span { color: var(--green); font-size: 11px; letter-spacing: .1em; }
+.skill-item h3 { font-size: 17px; margin: 13px 0 8px; }
+.skill-item p { font-size: 12px; line-height: 1.9; color: var(--muted); }
+.contact-section { background: var(--green-dark); color: #fff; padding-block: 75px 80px; }
+.contact-inner { text-align: center; }
+.contact-inner .eyebrow { color: #c3d0c4; }
+.contact-inner h2 { font-size: clamp(34px, 4.4vw, 52px); }
+.contact-inner h2 em { color: #c6d4c8; }
+.contact-inner > p:not(.eyebrow) { color: #d2d9d1; font-size: 13px; margin: 19px 0 24px; }
+.button-light { background: #f5f4ef; color: var(--green-dark); }
+.button-light:hover { background: #fff; }
+.contact-edit { display: block; color: #c1cbc2; font-size: 10px; margin-top: 14px; }
+.site-footer { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 20px max(5.5vw, calc((100vw - var(--max-width)) / 2)); color: var(--muted); font-size: 10px; }
+.site-footer .brand { color: var(--ink); }
+.site-footer > a:last-child:hover { color: var(--green); }
+@media (max-width: 800px) {
+  .hero { grid-template-columns: 1fr; gap: 35px; padding-block: 65px; }
+  .hero-note { min-height: 170px; }
+  .work-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .about-grid { grid-template-columns: 1fr; gap: 30px; }
+  .skill-grid { grid-template-columns: repeat(2, minmax(0,1fr)); row-gap: 15px; }
+}
+@media (max-width: 560px) {
+  .site-header { background-color: light-dark(var(--site-background), #171916); height: 66px; padding-inline: 20px; }
+  .brand { font-size: 9px; }
+  .menu-toggle { display: block; }
+  .nav { display: none; position: absolute; top: 65px; left: 0; right: 0; background: var(--paper); border-bottom: 1px solid var(--line); padding: 16px 22px 20px; flex-direction: column; align-items: flex-start; gap: 15px; }
+  .nav.open { display: flex; }
+  .section-wrap { width: calc(100% - 40px); }
+  .hero { min-height: 0; padding-block: 55px 65px; }
+  h1 { font-size: 39px; }
+  .hero-intro { font-size: 13px; }
+  .hero-note { padding: 25px; }
+  .section-heading { align-items: flex-start; flex-direction: column; gap: 10px; }
+  .works { padding-block: 20px 70px; }
+  .work-grid { grid-template-columns: 1fr; gap: 34px; }
+  .work-image { height: 235px; }
+  .work-card > p { min-height: 0; }
+  .about-section, .skills { padding-block: 62px; }
+  .skill-grid { grid-template-columns: 1fr 1fr; }
+  .skill-item { margin-right: 8px; padding-right: 6px; }
+  .contact-section { padding-block: 60px; }
+  .site-footer { padding: 20px; flex-wrap: wrap; }
+}
+
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="返回首页"><span class="brand-mark">C.</span><span>CONTENT PORTFOLIO</span></a>
+    <button class="menu-toggle" aria-label="打开导航" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="主导航">
+      <a href="#works">精选作品</a>
+      <a href="#about">关于我</a>
+      <a href="#skills">创作能力</a>
+      <a href="#contact">联系我</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">BRAND CONTENT · SCRIPT · VISUAL</p>
+        <h1>让品牌表达更清晰，<br><em>让每份内容有据可读。</em></h1>
+        <p class="hero-intro">这里收录我参与创作的品牌微信公众号内容，涵盖行业资讯、项目案例、品牌传播等方向。面向政企客户与行业受众，内容表达注重专业、准确与清晰；除文章撰写和图文排版外，我也负责相关视频脚本撰写，以及文中海报的创意构思与绘制。</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#works">浏览精选作品 <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="#about">了解我 <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <aside class="hero-note" aria-label="作品集说明">
+        <span class="note-index">01 / PORTFOLIO</span>
+        <div class="note-rule"></div>
+        <p>文章文案、视频脚本与海报视觉，从内容到呈现。</p>
+        <span class="note-small">WRITING · SCRIPT · VISUAL DESIGN</span>
+      </aside>
+    </section>
+
+    <section class="works section-wrap" id="works">
+      <div class="section-heading">
+        <div><p class="eyebrow">SELECTED WORKS / 作品精选</p><h2>代表作品</h2></div>
+        <p class="section-aside">8 篇真实作品 · 原文直达 · 阅读数据</p>
+      </div>
+      <div class="filter-row" role="group" aria-label="筛选作品分类">
+        <button class="filter-button active" data-filter="all">全部作品</button>
+        <button class="filter-button" data-filter="brand">品牌传播与行业交流</button>
+        <button class="filter-button" data-filter="event">项目案例</button>
+        <button class="filter-button" data-filter="feature">展会与活动</button>
+      </div>
+      <div class="work-grid" id="work-grid">
+        <article class="work-card" data-category="brand">
+          <a class="work-image image-cream" href="https://mp.weixin.qq.com/s/bxcNkropzuBOwcb882ZIvg" target="_blank" rel="noopener" aria-label="阅读协会参观交流文章"><span class="image-label">BRAND CONTENT / 01</span><span class="image-title">行业交流<br>共谋合作</span><span class="image-decoration">01</span></a>
+          <div class="work-meta"><span>行业交流</span><span>阅读量 645</span></div>
+          <h3><a href="https://mp.weixin.qq.com/s/bxcNkropzuBOwcb882ZIvg" target="_blank" rel="noopener">浙江省固态光源行业协会莅临上海三思参观交流，共谋合作发展新篇章</a></h3>
+          <p>围绕行业协会到访交流展开，梳理参观重点与合作信息，呈现企业开放交流、协同发展的品牌形象。</p>
+          <div class="card-links"><span>文章撰写 · 图文排版</span><a href="https://mp.weixin.qq.com/s/bxcNkropzuBOwcb882ZIvg" target="_blank" rel="noopener">阅读原文 <span>↗</span></a></div>
+        </article>
+        <article class="work-card" data-category="brand">
+          <a class="work-image image-sage" href="https://mp.weixin.qq.com/s/cgtUdDjX3CXNglEClab0zQ" target="_blank" rel="noopener" aria-label="阅读北外滩地标屏文章"><span class="image-label">BRAND CONTENT / 02</span><span class="image-title">城市地标<br>科技之光</span><span class="image-decoration">02</span></a>
+          <div class="work-meta"><span>品牌传播</span><span>阅读量 807</span></div>
+          <h3><a href="https://mp.weixin.qq.com/s/cgtUdDjX3CXNglEClab0zQ" target="_blank" rel="noopener">世界会客厅的“琉璃”名片：北外滩地标LED屏，以科技之光闪耀AI盛会</a></h3>
+          <p>以城市地标与大型活动为切入点，结合场景价值和显示技术，强化品牌技术实力与应用形象。</p>
+          <div class="card-links"><span>文章撰写 · 视觉构思</span><a href="https://mp.weixin.qq.com/s/cgtUdDjX3CXNglEClab0zQ" target="_blank" rel="noopener">阅读原文 <span>↗</span></a></div>
+        </article>
+        <article class="work-card" data-category="event">
+          <a class="work-image image-lilac" href="https://mp.weixin.qq.com/s/wljkmLxc8l-Jb2AmNFmtAg" target="_blank" rel="noopener" aria-label="阅读扬州中远海运重工项目文章"><span class="image-label">PROJECT CASE / 03</span><span class="image-title">数智中心<br>展示实践</span><span class="image-decoration">03</span></a>
+          <div class="work-meta"><span>项目案例</span><span>阅读量 906</span></div>
+          <h3><a href="https://mp.weixin.qq.com/s/wljkmLxc8l-Jb2AmNFmtAg" target="_blank" rel="noopener">上海三思赋能扬州中远海运重工数智中心，打造船舶制造数字化展示示范实践</a></h3>
+          <p>聚焦数智中心应用场景，组织项目背景、解决方案与展示价值，突出技术赋能产业数字化的实践成果。</p>
+          <div class="card-links"><span>案例文案 · 信息梳理</span><a href="https://mp.weixin.qq.com/s/wljkmLxc8l-Jb2AmNFmtAg" target="_blank" rel="noopener">阅读原文 <span>↗</span></a></div>
+        </article>
+        <article class="work-card" data-category="event">
+          <a class="work-image image-cream" href="https://mp.weixin.qq.com/s/5xn2_c8DqK5isSlmbTgDGQ" target="_blank" rel="noopener" aria-label="阅读黄岗路黄河隧道通车文章"><span class="image-label">PROJECT CASE / 04</span><span class="image-title">交通建设<br>点亮新动脉</span><span class="image-decoration">04</span></a>
+          <div class="work-meta"><span>项目案例</span><span>阅读量 540</span></div>
+          <h3><a href="https://mp.weixin.qq.com/s/5xn2_c8DqK5isSlmbTgDGQ" target="_blank" rel="noopener">济南黄岗路黄河隧道今日通车｜三思点亮“黄河时代”新动脉</a></h3>
+          <p>结合交通基础设施通车节点，突出项目意义与显示应用场景，让技术信息与城市发展叙事自然衔接。</p>
+          <div class="card-links"><span>文章撰写 · 内容编排</span><a href="https://mp.weixin.qq.com/s/5xn2_c8DqK5isSlmbTgDGQ" target="_blank" rel="noopener">阅读原文 <span>↗</span></a></div>
+        </article>
+        <article class="work-card" data-category="event">
+          <a class="work-image image-sage" href="https://mp.weixin.qq.com/s/u8XwAIp4-5AScIhK_kklJQ" target="_blank" rel="noopener" aria-label="阅读上海人民广场屏项目文章"><span class="image-label">PROJECT CASE / 05</span><span class="image-title">城市更新<br>弧幕焕新</span><span class="image-decoration">05</span></a>
+          <div class="work-meta"><span>项目案例</span><span>阅读量 684</span></div>
+          <h3><a href="https://mp.weixin.qq.com/s/u8XwAIp4-5AScIhK_kklJQ" target="_blank" rel="noopener">城市弧幕焕新｜三思点亮上海人民广场屏</a></h3>
+          <p>以城市公共空间的屏幕焕新为主题，简洁呈现项目场景、视觉效果与城市传播价值。</p>
+          <div class="card-links"><span>文章撰写 · 海报构思</span><a href="https://mp.weixin.qq.com/s/u8XwAIp4-5AScIhK_kklJQ" target="_blank" rel="noopener">阅读原文 <span>↗</span></a></div>
+        </article>
+        <article class="work-card" data-category="brand">
+          <a class="work-image image-lilac" href="https://mp.weixin.qq.com/s/DI1O1tXwi90Hd8ycFyxKkQ" target="_blank" rel="noopener" aria-label="阅读国庆特别呈现文章"><span class="image-label">BRAND CONTENT / 06</span><span class="image-title">光与时代<br>同行向前</span><span class="image-decoration">06</span></a>
+          <div class="work-meta"><span>品牌专题</span><span>阅读量 357</span></div>
+          <h3><a href="https://mp.weixin.qq.com/s/DI1O1tXwi90Hd8ycFyxKkQ" target="_blank" rel="noopener">光，与时代同行｜上海三思国庆特别呈现</a></h3>
+          <p>围绕节日节点组织品牌主题内容，通过简洁的文字和视觉表达传递品牌气质与时代主题。</p>
+          <div class="card-links"><span>主题文案 · 视觉构思</span><a href="https://mp.weixin.qq.com/s/DI1O1tXwi90Hd8ycFyxKkQ" target="_blank" rel="noopener">阅读原文 <span>↗</span></a></div>
+        </article>
+        <article class="work-card" data-category="feature">
+          <a class="work-image image-sage" href="https://mp.weixin.qq.com/s/agWH7Ed_d99jG7IgCe5H-w" target="_blank" rel="noopener" aria-label="阅读Highways UK参展文章"><span class="image-label">EXHIBITION / 07</span><span class="image-title">亮相英国<br>面向多样道路</span><span class="image-decoration">07</span></a>
+          <div class="work-meta"><span>展会与活动</span><span>阅读量 885</span></div>
+          <h3><a href="https://mp.weixin.qq.com/s/agWH7Ed_d99jG7IgCe5H-w" target="_blank" rel="noopener">亮相英国｜上海三思参展 Highways UK 2026，欧标交通显示屏适配多样道路场景</a></h3>
+          <p>面向国际展会受众，提炼参展信息、产品特点及道路应用场景，兼顾专业性与信息可读性。</p>
+          <div class="card-links"><span>展会文案 · 信息整理</span><a href="https://mp.weixin.qq.com/s/agWH7Ed_d99jG7IgCe5H-w" target="_blank" rel="noopener">阅读原文 <span>↗</span></a></div>
+        </article>
+        <article class="work-card" data-category="event">
+          <a class="work-image image-cream" href="https://mp.weixin.qq.com/s/QV8gQFQQRkMV3z-YeL_Bew" target="_blank" rel="noopener" aria-label="阅读北岛肆号美术馆沉浸式空间文章"><span class="image-label">PROJECT CASE / 08</span><span class="image-title">光影筑梦<br>沉浸体验</span><span class="image-decoration">08</span></a>
+          <div class="work-meta"><span>项目案例</span><span>阅读量 277</span></div>
+          <h3><a href="https://mp.weixin.qq.com/s/QV8gQFQQRkMV3z-YeL_Bew" target="_blank" rel="noopener">光影筑梦童心｜上海三思打造浦东·北岛肆号美术馆沉浸式互动空间</a></h3>
+          <p>以儿童艺术空间为主题，介绍沉浸式展示体验，并通过内容与视觉元素传达项目特色。</p>
+          <div class="card-links"><span>文章撰写 · 海报构思与绘制</span><a href="https://mp.weixin.qq.com/s/QV8gQFQQRkMV3z-YeL_Bew" target="_blank" rel="noopener">阅读原文 <span>↗</span></a></div>
+        </article>
+      </div>
+      <p class="edit-hint"><strong>关于数据：</strong>阅读量为作品集整理时提供的数据，可能随公众号后台统计口径及时间变化。点击标题或“阅读原文”可查看对应公众号文章。</p>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="section-wrap about-grid">
+        <div><p class="eyebrow">A LITTLE ABOUT ME / 关于我</p><h2>认真对待每一篇内容，<br><em>也认真对待每一次表达。</em></h2></div>
+        <div class="about-copy">
+          <p>我参与企业品牌内容创作，作品不只发布于微信公众号，也会同步应用于公司中外官网、Facebook、LinkedIn 等平台。由于内容主要面向政企客户与行业受众，传播重点在于准确传递企业信息、技术特点和项目价值，因此更注重事实核对、专业表达与信息清晰度，而非繁复的视觉包装。</p>
+          <p>我的工作包括品牌文章撰写、图文排版、相关视频脚本撰写，以及文章配套海报的创意构思与图案绘制，关注不同传播载体之间的内容一致性与表达适配。</p>
+          <p class="small-note">作品中的文章链接与阅读量根据个人整理的作品表呈现；涉及团队协作的项目，重点展示本人承担的内容创作与视觉设计工作。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section-wrap" id="skills">
+      <div class="section-heading"><div><p class="eyebrow">WHAT I DO / 创作能力</p><h2>从内容到呈现</h2></div><p class="section-aside">围绕品牌传播目标，完成内容与视觉表达。</p></div>
+      <div class="skill-grid">
+        <div class="skill-item"><span>01</span><h3>品牌文章撰写</h3><p>围绕企业动态、行业交流和项目案例组织内容，保持专业、清晰、准确的表达。</p></div>
+        <div class="skill-item"><span>02</span><h3>视频脚本创作</h3><p>根据主题与传播目标梳理叙事逻辑，撰写视频脚本，明确内容节奏与信息重点。</p></div>
+        <div class="skill-item"><span>03</span><h3>海报构思与绘制</h3><p>根据文章主题构思视觉方向，参与海报图案设计与绘制，保持图文内容一致。</p></div>
+        <div class="skill-item"><span>04</span><h3>内容合规审核</h3><p>检查宣传用语是否准确、规范，留意广告法相关要求及“最”“第一”等极限词风险，核对数据、表述与必要依据，降低内容发布风险。</p></div>
+        <div class="skill-item"><span>05</span><h3>图文编辑排版</h3><p>安排标题层级、段落节奏、图片与留白，确保页面整洁统一、重点明确。</p></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="section-wrap contact-inner">
+        <p class="eyebrow">LET'S CONNECT / 联系我</p>
+        <h2>期待让好的内容，<br><em>遇见更多读者。</em></h2>
+        <p>求职方向：市场专员 / 品牌营销推广</p>
+        <p>电话：15996039703　｜　邮箱：15996039703@163.com</p>
+        <a class="button button-light" href="mailto:15996039703@163.com">发送邮件 <span aria-hidden="true">↗</span></a>
+        <span class="contact-edit">电话：15996039703 · 邮箱：15996039703@163.com</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#top"><span class="brand-mark">C.</span><span>CONTENT PORTFOLIO</span></a><span>© <span id="year"></span> 个人内容创作作品集</span><a href="#top">返回顶部 ↑</a></footer>
+  <script>
+// 作品分类筛选
+const filterButtons = document.querySelectorAll('.filter-button');
+const workCards = document.querySelectorAll('.work-card');
+filterButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const selected = button.dataset.filter;
+    filterButtons.forEach((item) => item.classList.toggle('active', item === button));
+    workCards.forEach((card) => {
+      card.hidden = selected !== 'all' && card.dataset.category !== selected;
+    });
+  });
+});
+
+// 移动端导航
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav');
+if (menuToggle && nav) {
+  menuToggle.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+  nav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
+
+// 自动更新页脚年份
+const year = document.getElementById('year');
+if (year) year.textContent = new Date().getFullYear();
+
+  </script>
+</body>
+</html>
